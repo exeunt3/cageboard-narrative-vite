@@ -1,0 +1,65 @@
+[
+  {
+    "id": "sv.call.buoyant.obs",
+    "binds": {
+      "function": "fn.call",
+      "mood": "buoyant",
+      "pov": "observer"
+    },
+    "text": "Opening tremor of meaning: two presences listen as the air arranges a sign. The language lifts, edges bright. (Seen from without.)"
+  },
+  {
+    "id": "sv.threshold.cross.close",
+    "binds": {
+      "function": "fn.threshold_crossing",
+      "mood": "strained",
+      "pov": "close"
+    },
+    "text": "At the mark between worlds, the traveler meets the threshold and does not look back. Sentences shorten; heat tightens the field. (Felt from within.)"
+  },
+  {
+    "id": "sv.trial.ominous.obs",
+    "binds": {
+      "function": "fn.trial",
+      "mood": "ominous",
+      "pov": "observer"
+    },
+    "text": "The test arrives heavy as stone; each step costs. A hush gathers; the future leans in. (Seen from without.)"
+  },
+  {
+    "id": "sv.transformation.buoyant.close",
+    "binds": {
+      "function": "fn.transformation",
+      "mood": "buoyant",
+      "pov": "close"
+    },
+    "text": "The body reorganizes; old contours loosen, a new alignment holds. The language lifts, edges bright. (Felt from within.)"
+  },
+  {
+    "id": "sv.recognition.reflective.obs",
+    "binds": {
+      "function": "fn.recognition",
+      "mood": "reflective",
+      "pov": "observer"
+    },
+    "text": "Pattern clicks into place; what was noise resolves into a line. The world quiets; attention deepens. (Seen from without.)"
+  },
+  {
+    "id": "sv.reparation.reflective.close",
+    "binds": {
+      "function": "fn.reparation",
+      "mood": "reflective",
+      "pov": "close"
+    },
+    "text": "Threads worry the tear until it holds again. The world quiets; attention deepens. (Felt from within.)"
+  },
+  {
+    "id": "sv.return.buoyant.obs",
+    "binds": {
+      "function": "fn.return",
+      "mood": "buoyant",
+      "pov": "observer"
+    },
+    "text": "The world receives the traveler altered and the same. The language lifts, edges bright. (Seen from without.)"
+  }
+]

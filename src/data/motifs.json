@@ -1,0 +1,46 @@
+[
+  {
+    "id": "motif.water",
+    "lexicon": [
+      "dew",
+      "river",
+      "thirst",
+      "mist",
+      "rain",
+      "pool"
+    ]
+  },
+  {
+    "id": "motif.stone",
+    "lexicon": [
+      "ledge",
+      "boulder",
+      "grit",
+      "basalt",
+      "fault",
+      "rubble"
+    ]
+  },
+  {
+    "id": "motif.heat",
+    "lexicon": [
+      "glare",
+      "ember",
+      "scorch",
+      "haze",
+      "bloom",
+      "sear"
+    ]
+  },
+  {
+    "id": "motif.breath",
+    "lexicon": [
+      "sigh",
+      "draw",
+      "exhale",
+      "pulse",
+      "gust",
+      "whisper"
+    ]
+  }
+]

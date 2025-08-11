@@ -1,0 +1,163 @@
+{
+  "entity": "geology.generic",
+  "channels": [
+    "seismic",
+    "tilt",
+    "gas_flux",
+    "temp"
+  ],
+  "windows": {
+    "trend": 5,
+    "variance": 5
+  },
+  "bins": {
+    "seismic": [
+      {
+        "id": "low",
+        "max": 0.003
+      },
+      {
+        "id": "med",
+        "max": 0.008
+      },
+      {
+        "id": "high",
+        "max": 1.0
+      }
+    ],
+    "tilt": [
+      {
+        "id": "stable",
+        "max": 0.015
+      },
+      {
+        "id": "shift",
+        "max": 0.03
+      },
+      {
+        "id": "shear",
+        "max": 10.0
+      }
+    ],
+    "gas_flux": [
+      {
+        "id": "low",
+        "max": 350
+      },
+      {
+        "id": "med",
+        "max": 450
+      },
+      {
+        "id": "high",
+        "max": 10000
+      }
+    ],
+    "temp": [
+      {
+        "id": "cool",
+        "max": 60
+      },
+      {
+        "id": "warm",
+        "max": 120
+      },
+      {
+        "id": "hot",
+        "max": 1000
+      }
+    ]
+  },
+  "ncv": {
+    "pace": {
+      "from": "seismic.var",
+      "map": [
+        [
+          "low",
+          "calm"
+        ],
+        [
+          "med",
+          "steady"
+        ],
+        [
+          "high",
+          "fast"
+        ]
+      ]
+    },
+    "mood": {
+      "from": "gas_flux.bin",
+      "map": [
+        [
+          "low",
+          "dormant"
+        ],
+        [
+          "med",
+          "pressurized"
+        ],
+        [
+          "high",
+          "ominous"
+        ]
+      ]
+    },
+    "pov": {
+      "from": "tilt.bin",
+      "map": [
+        [
+          "stable",
+          "observer"
+        ],
+        [
+          "shift",
+          "faultline"
+        ],
+        [
+          "shear",
+          "abyss"
+        ]
+      ]
+    },
+    "symbolic": {
+      "from": "seismic.trend",
+      "map": [
+        [
+          "up",
+          "stone"
+        ],
+        [
+          "down",
+          "hollow"
+        ],
+        [
+          "flat",
+          "breath"
+        ]
+      ]
+    }
+  },
+  "functions": {
+    "thresholds": [
+      {
+        "if": "(seismic.bin==='high')",
+        "then": [
+          "fn.trial"
+        ]
+      },
+      {
+        "if": "(gas_flux.bin==='high') && (temp.bin!=='cool')",
+        "then": [
+          "fn.threshold_crossing"
+        ]
+      },
+      {
+        "if": "(tilt.bin==='shear')",
+        "then": [
+          "fn.recognition"
+        ]
+      }
+    ]
+  }
+}

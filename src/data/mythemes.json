@@ -1,0 +1,130 @@
+[
+  {
+    "id": "mt.threshold",
+    "semantics": "crossing into altered domain",
+    "pre": [
+      "ctx.threshold_visible"
+    ],
+    "post": [
+      "ctx.is_liminal=true"
+    ],
+    "motifs": [
+      "gate",
+      "depth",
+      "silence"
+    ],
+    "affordances": [
+      "attach:guide",
+      "attach:omen"
+    ]
+  },
+  {
+    "id": "mt.trial",
+    "semantics": "ordeal or test",
+    "pre": [],
+    "post": [
+      "ctx.cost_incurred"
+    ],
+    "motifs": [
+      "heat",
+      "stone",
+      "weight"
+    ],
+    "affordances": [
+      "attach:shadow",
+      "attach:gatekeeper"
+    ]
+  },
+  {
+    "id": "mt.helper_appears",
+    "semantics": "aiding agent arrives",
+    "pre": [],
+    "post": [
+      "ctx.helper_bound"
+    ],
+    "motifs": [
+      "light",
+      "voice",
+      "track"
+    ],
+    "affordances": [
+      "attach:guide"
+    ]
+  },
+  {
+    "id": "mt.transformation",
+    "semantics": "reconfiguration of state",
+    "pre": [
+      "ctx.is_liminal=true"
+    ],
+    "post": [
+      "ctx.form_shift"
+    ],
+    "motifs": [
+      "molting",
+      "spark",
+      "riverbend"
+    ],
+    "affordances": []
+  },
+  {
+    "id": "mt.loss",
+    "semantics": "loss or depletion",
+    "pre": [],
+    "post": [
+      "ctx.void_present"
+    ],
+    "motifs": [
+      "hollow",
+      "dust",
+      "absence"
+    ],
+    "affordances": []
+  },
+  {
+    "id": "mt.recognition",
+    "semantics": "recognition/insight",
+    "pre": [],
+    "post": [
+      "ctx.knowledge_gain"
+    ],
+    "motifs": [
+      "mirror",
+      "name",
+      "pattern"
+    ],
+    "affordances": []
+  },
+  {
+    "id": "mt.reparation",
+    "semantics": "repair/renewal",
+    "pre": [
+      "ctx.cost_incurred"
+    ],
+    "post": [
+      "ctx.balance_tilt"
+    ],
+    "motifs": [
+      "weave",
+      "sap",
+      "mending"
+    ],
+    "affordances": []
+  },
+  {
+    "id": "mt.return",
+    "semantics": "return to domain with change",
+    "pre": [
+      "ctx.form_shift"
+    ],
+    "post": [
+      "ctx.is_home=true"
+    ],
+    "motifs": [
+      "path",
+      "door",
+      "dawn"
+    ],
+    "affordances": []
+  }
+]

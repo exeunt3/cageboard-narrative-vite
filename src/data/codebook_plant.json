@@ -1,0 +1,165 @@
+{
+  "entity": "plant.generic",
+  "channels": [
+    "lum",
+    "transpiration",
+    "bio_potential",
+    "temp"
+  ],
+  "windows": {
+    "trend": 5,
+    "variance": 5
+  },
+  "bins": {
+    "lum": [
+      {
+        "id": "low",
+        "max": 80
+      },
+      {
+        "id": "med",
+        "max": 200
+      },
+      {
+        "id": "high",
+        "max": 100000
+      }
+    ],
+    "transpiration": [
+      {
+        "id": "low",
+        "max": 0.012
+      },
+      {
+        "id": "med",
+        "max": 0.02
+      },
+      {
+        "id": "high",
+        "max": 1.0
+      }
+    ],
+    "bio_potential": [
+      {
+        "id": "low",
+        "max": 0.22
+      },
+      {
+        "id": "med",
+        "max": 0.27
+      },
+      {
+        "id": "high",
+        "max": 1.0
+      }
+    ],
+    "temp": [
+      {
+        "id": "cool",
+        "max": 70
+      },
+      {
+        "id": "mild",
+        "max": 85
+      },
+      {
+        "id": "hot",
+        "max": 200
+      }
+    ]
+  },
+  "ncv": {
+    "pace": {
+      "from": "transpiration.var",
+      "map": [
+        [
+          "low",
+          "calm"
+        ],
+        [
+          "med",
+          "steady"
+        ],
+        [
+          "high",
+          "fast"
+        ]
+      ]
+    },
+    "mood": {
+      "from": "setpoint.temp",
+      "map": [
+        [
+          "cool",
+          "reflective"
+        ],
+        [
+          "mild",
+          "buoyant"
+        ],
+        [
+          "hot",
+          "strained"
+        ]
+      ]
+    },
+    "pov": {
+      "from": "relative.lum_vs_transpiration",
+      "map": [
+        [
+          "lum_dominant",
+          "canopy"
+        ],
+        [
+          "transpiration_dominant",
+          "roots"
+        ],
+        [
+          "balanced",
+          "observer"
+        ]
+      ]
+    },
+    "symbolic": {
+      "from": "lum.trend",
+      "map": [
+        [
+          "up",
+          "light"
+        ],
+        [
+          "down",
+          "shadow"
+        ],
+        [
+          "flat",
+          "breath"
+        ]
+      ]
+    }
+  },
+  "functions": {
+    "thresholds": [
+      {
+        "if": "(temp.bin==='hot') && (lum.bin==='high')",
+        "then": [
+          "fn.trial",
+          "fn.threshold_crossing"
+        ]
+      },
+      {
+        "if": "(bio_potential.trend>0.01)",
+        "then": [
+          "fn.transformation",
+          "fn.recognition"
+        ]
+      },
+      {
+        "if": "(lum.trend<-0.02)",
+        "then": [
+          "fn.recognition"
+        ]
+      }
+    ]
+  }
+}

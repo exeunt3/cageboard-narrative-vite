@@ -1,0 +1,100 @@
+[
+  {
+    "id": "fn.call",
+    "requires": [],
+    "adds": [
+      "arc.phase=separation"
+    ],
+    "roles": [
+      "protagonist"
+    ]
+  },
+  {
+    "id": "fn.threshold_crossing",
+    "requires": [
+      "mt.threshold"
+    ],
+    "adds": [
+      "arc.phase=liminal"
+    ],
+    "roles": [
+      "protagonist",
+      "gatekeeper"
+    ]
+  },
+  {
+    "id": "fn.trial",
+    "requires": [
+      "mt.trial"
+    ],
+    "adds": [
+      "ctx.cost_incurred"
+    ],
+    "roles": [
+      "protagonist",
+      "shadow"
+    ]
+  },
+  {
+    "id": "fn.aid",
+    "requires": [
+      "mt.helper_appears"
+    ],
+    "adds": [
+      "ctx.helper_bound"
+    ],
+    "roles": [
+      "guide",
+      "protagonist"
+    ]
+  },
+  {
+    "id": "fn.transformation",
+    "requires": [
+      "mt.transformation"
+    ],
+    "adds": [
+      "ctx.form_shift"
+    ],
+    "roles": [
+      "protagonist"
+    ]
+  },
+  {
+    "id": "fn.recognition",
+    "requires": [
+      "mt.recognition"
+    ],
+    "adds": [
+      "ctx.knowledge_gain"
+    ],
+    "roles": [
+      "protagonist",
+      "guide"
+    ]
+  },
+  {
+    "id": "fn.reparation",
+    "requires": [
+      "mt.reparation"
+    ],
+    "adds": [
+      "ctx.balance_tilt"
+    ],
+    "roles": [
+      "protagonist"
+    ]
+  },
+  {
+    "id": "fn.return",
+    "requires": [
+      "mt.return"
+    ],
+    "adds": [
+      "arc.phase=incorporation"
+    ],
+    "roles": [
+      "protagonist"
+    ]
+  }
+]

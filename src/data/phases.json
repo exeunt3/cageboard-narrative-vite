@@ -1,0 +1,25 @@
+[
+  {
+    "id": "phase.separation",
+    "allows": [
+      "fn.call",
+      "fn.threshold_crossing"
+    ]
+  },
+  {
+    "id": "phase.liminal",
+    "allows": [
+      "fn.trial",
+      "fn.aid",
+      "fn.transformation",
+      "fn.recognition"
+    ]
+  },
+  {
+    "id": "phase.incorporation",
+    "allows": [
+      "fn.reparation",
+      "fn.return"
+    ]
+  }
+]

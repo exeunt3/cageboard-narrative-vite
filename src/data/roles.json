@@ -1,0 +1,41 @@
+[
+  {
+    "id": "protagonist",
+    "kinds": [
+      "human",
+      "animal",
+      "plant",
+      "system",
+      "collective",
+      "place"
+    ]
+  },
+  {
+    "id": "shadow",
+    "kinds": [
+      "human",
+      "animal",
+      "system",
+      "place"
+    ]
+  },
+  {
+    "id": "guide",
+    "kinds": [
+      "human",
+      "animal",
+      "system",
+      "ancestor",
+      "place"
+    ]
+  },
+  {
+    "id": "gatekeeper",
+    "kinds": [
+      "human",
+      "animal",
+      "system",
+      "place"
+    ]
+  }
+]
