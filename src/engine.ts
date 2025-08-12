@@ -3,8 +3,9 @@ export type Codebook = {
   entity: string;
   channels: string[];
   windows: { trend: number; variance: number };
-  bins: Record<string, {id:string; max:number}[]>;
-  ncv: Record<string, { from: string; map: [string,string][] }>;
+  bins: Record<string, { id: string; max: number }[]>;
+  // ⬇️ change this line:
+  ncv: Record<string, { from: string; map: ([string, string] | string[])[] }>;
   functions: { thresholds: { if: string; then: string[] }[] };
 };
 

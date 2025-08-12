@@ -1,65 +1,473 @@
 [
   {
-    "id": "sv.call.buoyant.obs",
+    "id": "mv.road.day.1",
     "binds": {
-      "function": "fn.call",
-      "mood": "buoyant",
-      "pov": "observer"
+      "function": "fn.road_walk",
+      "time": "day",
+      "terrain": "road"
     },
-    "text": "Opening tremor of meaning: two presences listen as the air arranges a sign. The language lifts, edges bright. (Seen from without.)"
+    "text": "They follow the service road skirting the river."
   },
   {
-    "id": "sv.threshold.cross.close",
+    "id": "mv.road.morning.1",
     "binds": {
-      "function": "fn.threshold_crossing",
-      "mood": "strained",
-      "pov": "close"
+      "function": "fn.road_walk",
+      "time": "morning",
+      "terrain": "road"
     },
-    "text": "At the mark between worlds, the traveler meets the threshold and does not look back. Sentences shorten; heat tightens the field. (Felt from within.)"
+    "text": "They stay on the hardpack, turbines receding behind them."
   },
   {
-    "id": "sv.trial.ominous.obs",
+    "id": "mv.trail.day.forest.1",
     "binds": {
-      "function": "fn.trial",
-      "mood": "ominous",
-      "pov": "observer"
+      "function": "fn.trail_cut",
+      "time": "day",
+      "terrain": "forest"
     },
-    "text": "The test arrives heavy as stone; each step costs. A hush gathers; the future leans in. (Seen from without.)"
+    "text": "They leave the road and take a maintenance path into fir and alder."
   },
   {
-    "id": "sv.transformation.buoyant.close",
+    "id": "mv.trail.dusk.forest.1",
     "binds": {
-      "function": "fn.transformation",
-      "mood": "buoyant",
-      "pov": "close"
+      "function": "fn.trail_cut",
+      "time": "dusk",
+      "terrain": "forest"
     },
-    "text": "The body reorganizes; old contours loosen, a new alignment holds. The language lifts, edges bright. (Felt from within.)"
+    "text": "Light thins. They step onto a narrow trail under low branches."
   },
   {
-    "id": "sv.recognition.reflective.obs",
+    "id": "mv.ascend.rock.day",
     "binds": {
-      "function": "fn.recognition",
-      "mood": "reflective",
-      "pov": "observer"
+      "function": "fn.ascend",
+      "time": "day",
+      "terrain": "rock"
     },
-    "text": "Pattern clicks into place; what was noise resolves into a line. The world quiets; attention deepens. (Seen from without.)"
+    "text": "The grade steepens across broken rock; they climb in short, even bursts."
   },
   {
-    "id": "sv.reparation.reflective.close",
+    "id": "mv.descend.forest.day",
     "binds": {
-      "function": "fn.reparation",
-      "mood": "reflective",
-      "pov": "close"
+      "function": "fn.descend",
+      "time": "day",
+      "terrain": "forest"
     },
-    "text": "Threads worry the tear until it holds again. The world quiets; attention deepens. (Felt from within.)"
+    "text": "The path drops into a draw; leaf litter slides underfoot."
   },
   {
-    "id": "sv.return.buoyant.obs",
+    "id": "mv.cross.river.day",
     "binds": {
-      "function": "fn.return",
-      "mood": "buoyant",
-      "pov": "observer"
+      "function": "fn.crossing",
+      "time": "day",
+      "terrain": "river"
     },
-    "text": "The world receives the traveler altered and the same. The language lifts, edges bright. (Seen from without.)"
+    "text": "They wade a cold braid of the river, boots tied by their laces."
+  },
+  {
+    "id": "mv.cross.night.river",
+    "binds": {
+      "function": "fn.crossing",
+      "time": "night",
+      "terrain": "river"
+    },
+    "text": "In the dark, the water presses at their knees; they cross in silence."
+  },
+  {
+    "id": "env.noise_far.night.forest",
+    "binds": {
+      "function": "fn.noise_far",
+      "time": "night",
+      "terrain": "forest"
+    },
+    "text": "Somewhere upslope, something moves when they move; then stops."
+  },
+  {
+    "id": "env.noise_close.rock.day",
+    "binds": {
+      "function": "fn.noise_close",
+      "time": "day",
+      "terrain": "rock"
+    },
+    "text": "A clatter from the scree makes them freeze, then listen."
+  },
+  {
+    "id": "env.light_fails.dusk",
+    "binds": {
+      "function": "fn.light_fails",
+      "time": "dusk"
+    },
+    "text": "Cloud cover thickens; flashlights cut narrow cones between trees."
+  },
+  {
+    "id": "env.light_change.morning",
+    "binds": {
+      "function": "fn.light_change",
+      "time": "morning"
+    },
+    "text": "Sun finds gaps in the cloud; the path brightens in patches."
+  },
+  {
+    "id": "env.smell_metallic.road",
+    "binds": {
+      "function": "fn.smell_metallic",
+      "terrain": "road"
+    },
+    "text": "The air still smells metallic, as if the dam were inside the forest."
+  },
+  {
+    "id": "env.sign_confusing.day",
+    "binds": {
+      "function": "fn.sign_confusing",
+      "time": "day"
+    },
+    "text": "Two arrows on the same post point opposite directions."
+  },
+  {
+    "id": "env.double_identity.day",
+    "binds": {
+      "function": "fn.double_identity",
+      "time": "day"
+    },
+    "text": "They greet a traveler who later passes them again, from the wrong direction."
+  },
+  {
+    "id": "env.weather_shift.day",
+    "binds": {
+      "function": "fn.weather_shift",
+      "time": "day"
+    },
+    "text": "Rain starts and stops within a minute. A second front is coming."
+  },
+  {
+    "id": "env.feast_smell.dusk",
+    "binds": {
+      "function": "fn.feast_smell",
+      "time": "dusk"
+    },
+    "text": "They smell bread and smoke where no houses stand."
+  },
+  {
+    "id": "env.lanterns.night",
+    "binds": {
+      "function": "fn.lanterns",
+      "time": "night"
+    },
+    "text": "Lanterns sway from low branches, lit from no source they can see."
+  },
+  {
+    "id": "env.strange_music.night",
+    "binds": {
+      "function": "fn.strange_music",
+      "time": "night"
+    },
+    "text": "Music without origin drifts over the creek."
+  },
+  {
+    "id": "env.breath_current.night.rock",
+    "binds": {
+      "function": "fn.breath_current",
+      "time": "night",
+      "terrain": "rock"
+    },
+    "text": "The tunnel exhales; air draws them toward the dark."
+  },
+  {
+    "id": "env.stone_names.day.rock",
+    "binds": {
+      "function": "fn.stone_names",
+      "time": "day",
+      "terrain": "rock"
+    },
+    "text": "Jane names the stones; Jill repeats the names until they feel right."
+  },
+  {
+    "id": "env.bone_orchard.dusk.forest",
+    "binds": {
+      "function": "fn.bone_orchard",
+      "time": "dusk",
+      "terrain": "forest"
+    },
+    "text": "White shapes stand in a grove. They do not touch them."
+  },
+  {
+    "id": "ch.stalked.night",
+    "binds": {
+      "function": "fn.stalked",
+      "time": "night"
+    },
+    "text": "They are matched step for step. When they stop, it stops."
+  },
+  {
+    "id": "ch.stalked.dusk",
+    "binds": {
+      "function": "fn.stalked",
+      "time": "dusk"
+    },
+    "text": "A presence keeps pace just out of sight."
+  },
+  {
+    "id": "ch.wrong_place.day",
+    "binds": {
+      "function": "fn.wrong_place",
+      "time": "day"
+    },
+    "text": "They enter a clearing that shouldn\u2019t exist; every path looks new."
+  },
+  {
+    "id": "ch.near_miss.day",
+    "binds": {
+      "function": "fn.near_miss",
+      "time": "day"
+    },
+    "text": "Footing goes, but a trunk holds. They breathe until the shake passes."
+  },
+  {
+    "id": "ch.misdirection.day",
+    "binds": {
+      "function": "fn.misdirection",
+      "time": "day"
+    },
+    "text": "A friendly voice points to a shortcut that loops back on itself."
+  },
+  {
+    "id": "ch.lost_item.day",
+    "binds": {
+      "function": "fn.lost_item",
+      "time": "day"
+    },
+    "text": "They check their packs and the compass is gone."
+  },
+  {
+    "id": "ch.bad_bargain.day",
+    "binds": {
+      "function": "fn.bad_bargain",
+      "time": "day"
+    },
+    "text": "A trader wants too much for a hint. They walk on."
+  },
+  {
+    "id": "ch.chase.day.road",
+    "binds": {
+      "function": "fn.chase",
+      "time": "day",
+      "terrain": "road"
+    },
+    "text": "Footsteps grow closer on the road; they run until breath burns."
+  },
+  {
+    "id": "ch.obstacle.forest.day",
+    "binds": {
+      "function": "fn.obstacle",
+      "time": "day",
+      "terrain": "forest"
+    },
+    "text": "A windfall blocks the way; they crawl and pass packs across."
+  },
+  {
+    "id": "ch.cross_danger.rock.day",
+    "binds": {
+      "function": "fn.cross_danger",
+      "time": "day",
+      "terrain": "rock"
+    },
+    "text": "They cross a spillway grate one by one, each step sounding hollow."
+  },
+  {
+    "id": "ch.rule_presented.bridge",
+    "binds": {
+      "function": "fn.rule_presented"
+    },
+    "text": "A sign reads: \u201cDo not speak while the bridge is crossed.\u201d"
+  },
+  {
+    "id": "ch.giant_block.rock.day",
+    "binds": {
+      "function": "fn.giant_block",
+      "time": "day",
+      "terrain": "rock"
+    },
+    "text": "A boulder too round for this valley sits squarely on the trail."
+  },
+  {
+    "id": "ch.trial_riddle.dusk",
+    "binds": {
+      "function": "fn.trial_riddle",
+      "time": "dusk"
+    },
+    "text": "A child asks a question that isn\u2019t a question. They answer with a nod."
+  },
+  {
+    "id": "ch.ordeal_dark.night",
+    "binds": {
+      "function": "fn.ordeal_dark",
+      "time": "night"
+    },
+    "text": "Without lights, they count steps and turns; the dark equals them."
+  },
+  {
+    "id": "ch.name_turns.day",
+    "binds": {
+      "function": "fn.name_turns",
+      "time": "day"
+    },
+    "text": "A name that worked earlier fails; they try another."
+  },
+  {
+    "id": "ch.river_black.night.river",
+    "binds": {
+      "function": "fn.river_black",
+      "time": "night",
+      "terrain": "river"
+    },
+    "text": "The river here is black and fast; they cross in silence."
+  },
+  {
+    "id": "sup.find_marker.forest.day",
+    "binds": {
+      "function": "fn.find_marker",
+      "time": "day",
+      "terrain": "forest"
+    },
+    "text": "At a fork, a survey marker points east. They mark the map and continue."
+  },
+  {
+    "id": "sup.aid_sign.road.day",
+    "binds": {
+      "function": "fn.aid_sign",
+      "time": "day",
+      "terrain": "road"
+    },
+    "text": "Fresh paint on an old post shows an arrow where none had been."
+  },
+  {
+    "id": "sup.memory_map.day",
+    "binds": {
+      "function": "fn.memory_map",
+      "time": "day"
+    },
+    "text": "Jill reconstructs the creek bends from memory; they correct course."
+  },
+  {
+    "id": "sup.helper_offers.dusk",
+    "binds": {
+      "function": "fn.helper_offers",
+      "time": "dusk"
+    },
+    "text": "An old woman offers a pebble \u201cfor finding your way back.\u201d They keep it."
+  },
+  {
+    "id": "sup.gift_small.day",
+    "binds": {
+      "function": "fn.gift_small",
+      "time": "day"
+    },
+    "text": "Under a flat stone, someone left a biscuit wrapped in paper."
+  },
+  {
+    "id": "sup.guide_sign.night",
+    "binds": {
+      "function": "fn.guide_sign",
+      "time": "night"
+    },
+    "text": "A white moth waits at the tunnel mouth, wings like a small flag."
+  },
+  {
+    "id": "sup.stranger_hint.bridge",
+    "binds": {
+      "function": "fn.stranger_hint"
+    },
+    "text": "\u201cKeep left at the fork,\u201d a man under the bridge says."
+  },
+  {
+    "id": "mnt.repair_boot.day",
+    "binds": {
+      "function": "fn.repair_boot",
+      "time": "day"
+    },
+    "text": "They tape a frayed strap and change socks."
+  },
+  {
+    "id": "mnt.eat.day",
+    "binds": {
+      "function": "fn.eat",
+      "time": "day"
+    },
+    "text": "They split an apple and drink from the thermos."
+  },
+  {
+    "id": "mnt.repack.day",
+    "binds": {
+      "function": "fn.repack",
+      "time": "day"
+    },
+    "text": "They redistribute weight between the packs and set off again."
+  },
+  {
+    "id": "ref.breath_held.dusk",
+    "binds": {
+      "function": "fn.breath_held",
+      "time": "dusk"
+    },
+    "text": "They go a stretch without speaking, counting breaths."
+  },
+  {
+    "id": "ref.joke_turns.day",
+    "binds": {
+      "function": "fn.joke_turns",
+      "time": "day"
+    },
+    "text": "A joke from earlier lands wrong; they let it go."
+  },
+  {
+    "id": "ref.count_distance.day",
+    "binds": {
+      "function": "fn.count_distance",
+      "time": "day"
+    },
+    "text": "They estimate four more kilometers since the dam."
+  },
+  {
+    "id": "ref.promise_made.day",
+    "binds": {
+      "function": "fn.promise_made",
+      "time": "day"
+    },
+    "text": "They agree not to enter any building with a second story."
+  },
+  {
+    "id": "ref.naming.night",
+    "binds": {
+      "function": "fn.naming",
+      "time": "night"
+    },
+    "text": "They repeat the names for the turns until the names feel right."
+  },
+  {
+    "id": "ref.pattern_seen.day",
+    "binds": {
+      "function": "fn.pattern_seen",
+      "time": "day"
+    },
+    "text": "The path repeats three rises and a bend; they trust it."
+  },
+  {
+    "id": "gate.call",
+    "binds": {
+      "function": "fn.call"
+    },
+    "text": "They shoulder their packs and check the map. The road runs east along the river."
+  },
+  {
+    "id": "gate.threshold",
+    "binds": {
+      "function": "fn.threshold_crossing"
+    },
+    "text": "They leave the access road beyond the fence line. The plant hum fades behind them."
+  },
+  {
+    "id": "gate.return",
+    "binds": {
+      "function": "fn.return"
+    },
+    "text": "A lane appears between trees. They walk the last hundred meters without a word."
   }
 ]
